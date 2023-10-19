@@ -15,8 +15,9 @@ function screen2({ navigation }) {
 
     const [txtColor, setTxtColor] = useState("đỏ")
     const [txtProvide, setTxtProvide] = useState("Tiki Tradding")
+    const [txtPrice, setTxtPrice] = useState("1.790.000 đ")
     return (
-        <view style={styles.container}>
+        <View style={styles.container}>
 
             <View style={styles.style1}>
           
@@ -38,7 +39,7 @@ function screen2({ navigation }) {
                         <Text >Cung cấp bởi: </Text>  <Text style={styles.text}>{txtProvide}</Text>
                     </View>
 
-                    <Text style={[styles.text1, { marginTop: 10, }]}>1.790.000 đ</Text>
+                    <Text style={[styles.text1, { marginTop: 10, }]}>{txtPrice}</Text>
 
                 </View>
             </View>
@@ -51,6 +52,7 @@ function screen2({ navigation }) {
                         setImage(require('../img/vs_silver.png')),
                         setTxtColor('silver'),
                         setTxtProvide('Lazada Tradding')
+                        setTxtPrice('1.890.000 đ')
                     }} >
 
                 </Pressable>
@@ -60,6 +62,7 @@ function screen2({ navigation }) {
                         setImage(require('../img/vs_red.png')),
                         setTxtColor('red'),
                         setTxtProvide('Tiki Tradding')
+                        txtPrice('1.790.000 đ')
                     }} >
 
                 </Pressable>
@@ -69,6 +72,7 @@ function screen2({ navigation }) {
                         setImage(require('../img/vs_black.png')),
                         setTxtColor('black'),
                         setTxtProvide('Shope Tradding')
+                        setTxtPrice('1.990.000 đ')
                     }}>
 
                 </Pressable>
@@ -78,6 +82,7 @@ function screen2({ navigation }) {
                         setImage(require('../img/vs_blue.png')),
                         setTxtColor('blue'),
                         setTxtProvide('TikTok Tradding')
+                        setTxtPrice('1.590.000 đ')
                     }}>
 
                 </Pressable>
@@ -86,7 +91,7 @@ function screen2({ navigation }) {
                     <Text style={styles.txtBnt2}>XONG</Text>
                 </TouchableOpacity>
             </View>
-        </view>
+        </View>
 
     );
 };
